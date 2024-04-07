@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Card-information</title>
+</head>
+
+<body>
+
+
+    <article>
+
+        <div class="img">
+            <img src="https://pngimg.com/uploads/credit_card/credit_card_PNG118.png" alt="creditcardblank"
+                width="400px" />
+        </div>
+
+        <div class="cardnumber">
+            <h4>Card Number</h4>
+            <Input class="cardnumemp" type=“number“ required>
+        </div>
+
+        <div class="crdname">
+            <h4>Card Name</h4>
+            <input class="cardname" type="text" required>
+        </div>
+
+        <div class="expirdate">
+
+            <div>
+                <h4>Expiration Date</h4>
+                <select name="months" class="month" required>
+                    <option value="Jan">January</option>
+                    <option value="Feb">February</option>
+                    <option value="Mar">March</option>
+                    <option value="Apr">April</option>
+                    <option value="May">May</option>
+                    <option value="Jun">June</option>
+                    <option value="Jul">July</option>
+                    <option value="Aug">August</option>
+                    <option value="Sep">September</option>
+                    <option value="Oct">October</option>
+                    <option value="Nov">November</option>
+                    <option value="Dec">December</option>
+                </select>
+            </div>
+
+            <div><input class="year" type="number" placeholder="2023" required />
+            </div>
+
+            <div>
+                <h4>CVV</h4>
+                <input class="cvv" type="number" placeholder="000" required />
+            </div>
+
+        </div>
+
+
+        <button>Submit</button>
+
+    </article>
+
+
+</body>
+
+</html>

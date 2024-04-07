@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+/*-----------------*/
+/*-----HEADER-----*/
+/*---------------*/
+header {
+    background-image: url("https://wallpapers.com/images/hd/cloudy-purple-ombre-sky-gazqf6equqzd5t82.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+}
+
+.header-section {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.logo-img {
+    margin-bottom: 30px;
+}
+
+.header-section h1 {
+    color: white;
+    font-size: 42px;
+    letter-spacing: 0.1em;
+    line-height: 1.7em;
+}
+
+.header-section p {
+    color: white;
+    line-height: 1.5em;
+    font-size: 18px;
+    width: 350px;
+}
+
+.header-section button {
+    text-transform: uppercase;
+    width: 230px;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 100px;
+    border-style: none;
+    color: #4e1da3;
+    letter-spacing: 0.1em;
+}
+
+#start-button:link {
+    text-decoration: none;
+    color: #4e1da3;
+}
+
+#start-button:hover {
+    color: #4e1da3;
+}
+
+.header-section button:hover {
+    color: #7431e8;
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/*----------------------*/
+/*----MAIN-SECTION1----*/
+/*--------------------*/
+
+.main-section1 {
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+.main-section1 ul li {
+    margin-bottom: 30px;
+    list-style-type: none;
+}
+
+
+.main-icons {
+    background: linear-gradient(#9b1bc2, #7431e8, #4e1da3);
+    padding: 15px;
+    display: block;
+    border-radius: 100px;
+}
+
+.main-section1 h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.list-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.list-text h3 {
+    font-size: 28px;
+}
+
+
+.list-text span {
+    font-size: 16px;
+    width: 400px;
+    height: auto;
+    line-height: 1.5em;
+}
+
+.list-divs {
+    display: flex;
+    gap: 20px;
+}
+
+.try-button {
+    background-color: #7fcf3a;
+    color: white;
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 100px;
+    padding: 20px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.try-button:hover {
+    background-color: #85db3b;
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+
+/*----------------------*/
+/*----MAIN-SECTION2----*/
+/*--------------------*/
+
+main {
+    background: linear-gradient(#ffff, #ececec);
+    padding-bottom: 50px;
+}
+
+.main-section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.sec2-div1 h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.sec2-div1 p {
+    font-size: 18px;
+    width: 670px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.buttons-list {
+    display: flex;
+    gap: 30px;
+}
+
+#button1-li {
+    background: linear-gradient(#9b1bc2, #7431e8, #4e1da3);
+    color: white;
+}
+
+.buttons-list {
+    position: absolute;
+    top: 165px;
+}
+
+.buttons-list button {
+    font-size: 18px;
+    padding: 10px 15px;
+    border-style: none;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: #d4d4d4;
+}
+
+.buttons-list button:hover {
+    cursor: pointer;
+    background-color: #e3e3e3;
+}
+
+.div-song-pic {
+    display: flex;
+    gap: 120px;
+    border: 1px solid #ffff;
+    background-color: #ffff;
+    border-radius: 30px;
+    padding: 70px 150px 0 150px;
+}
+
+.div-text-pic {
+    text-align: center;
+    width: 400px;
+}
+
+.div-text-pic h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.harry-p {
+    line-height: 1.7em;
+    margin-bottom: 30px;
+}
+
+.div-text-pic span {
+    font-size: 14px;
+    background-color: #dedede;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+}
+
+.harry-link:link {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.harry-link:hover {
+    text-decoration: underline;
+}
+
+.harry-pic {
+    border-radius: 30px 30px 0 0;
+    border: 8px solid #dedede;
+    border-bottom: none;
+}
+
+audio {
+    margin-top: 15px;
+}
+
+/*----------------*/
+/*----ARTICLE----*/
+/*--------------*/
+article {
+    padding-bottom: 100px;
+}
+
+article h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.article-divs {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.article-div1 {
+    width: 400px;
+}
+
+.date-p {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #4d5fe3;
+    letter-spacing: 0.2em;
+    margin-bottom: 5px;
+}
+
+.date2p {
+    margin-bottom: 25px;
+}
+
+.date3p {
+    margin-bottom: 5px;
+}
+
+.underphoto-p {
+    line-height: 2em;
+}
+
+.underphoto-p2 {
+    margin-top: 25px;
+}
+
+.underphoto-p3 {
+    margin-top: 8px;
+}
+
+.article-button {
+    background-color: #7fcf3a;
+    color: white;
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 100px;
+    padding: 20px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    width: 250px;
+    margin-top: 150px;
+}
+
+.article-button:hover {
+    background-color: #85db3b;
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#aricle-button {
+    display: flex;
+    justify-content: center;
+}
+
+/*---------------*/
+/*----FOOTER----*/
+/*-------------*/
+
+footer {
+    background-color: #8a8a8a;
+    padding-bottom: 50px;
+}
+
+.footer-divs {
+    display: flex;
+    gap: 130px;
+}
+
+.footer-divs h4 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.footer-divs ul li {
+    list-style-type: none;
+    line-height: 2em;
+}
+
+.footer-divs ul li a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-divs ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-end {
+    display: flex;
+    justify-content: center;
+    gap: 450px;
+    padding: 100px;
+}
+
+h5 {
+    color: #c4c4c4;
+    text-align: center;
+}
+
+@media (max-width=600px) {
+    .media1 img {
+  display: hidden;
+    }
+
+}

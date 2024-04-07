@@ -1,0 +1,700 @@
+/*LINK KOJI MI JE POTREBAN ZA SLIKE
+https://manybooks.net/
+https://www.barnesandnoble.com/
+overflow-y: scroll;
+max-height: 100vh;
+https://heroicons.com/
+https://wordery.com/*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "inter", sans-serif;
+    color: #343a40;
+    border-top: 5px solid #f59f00;
+    border-bottom: 5px solid #f59f00;
+}
+
+header {
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 128px;
+    column-gap: 70px;
+    letter-spacing: -0.5px;
+    line-height: 1;
+}
+
+header p {
+    font-size: 20px;
+    padding-top: 20px;
+
+}
+
+.header-text {
+    width: 450px;
+    text-align: center;
+    align-self: center;
+}
+
+header img {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.button-enter {
+    background-color: #f59f00;
+    width: 160px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    color: white;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.button-enter:hover {
+    background-color: #fab005;
+    cursor: pointer;
+}
+
+/*-----------------*/
+/*---BOOK FACTS---*/
+/*---------------*/
+.book-facts {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 60px 1fr;
+    column-gap: 30px;
+    justify-content: center;
+    margin-bottom: 128px;
+}
+
+.book-facts p {
+    padding: 2px 15px;
+    line-height: 1.5;
+}
+
+.book-fact-h2 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.fact1 {
+    width: 300px;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    height: 440px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+.fact1 button {
+    margin-top: 41px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.fact2 {
+    width: 300px;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    height: 440px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+.fact2 button {
+    margin-top: 54px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.fact3 {
+    width: 300px;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    height: 440px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+.button-readme {
+    background-color: #f59f00;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-left: 90px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.button-readme:hover {
+    background-color: #fab005;
+    cursor: pointer;
+}
+
+/*-------------------*/
+/*---BOOKS GENRES---*/
+/*-----------------*/
+
+.book-genres {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: 60px 250px 250px 250px;
+    justify-content: center;
+    column-gap: 30px;
+    margin-bottom: 80px;
+}
+
+.browse-genres {
+    grid-column: 1/5;
+    display: flex;
+}
+
+.browse-genres h1 {
+    font-size: 32px;
+}
+
+.browse-genres a {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #f59f00;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.browse-genres a:hover {
+    color: #fab005;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.genre-pic {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.romance {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+.action {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.mystery {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.biographies {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: -0.2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.childrens {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.young-adult {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.fantasy {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.historical-fict {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.horror {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.literary-fict {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.non-fiction {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.science-fict {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+/*--------------------*/
+/*--EDITOR'S CHOICE--*/
+/*------------------*/
+
+.editors-choice {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: 60px 200px;
+    justify-content: center;
+    margin-bottom: 96px;
+}
+
+.editors-choice-text {
+    grid-column: 1/7;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.editors-choice-text h1 {
+    font-size: 32px;
+}
+
+.editors-choice-text a {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #f59f00;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.editors-choice-text a:hover {
+    color: #fab005;
+    text-decoration: underline;
+}
+
+.editors-book-pic {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    width: 150px;
+    height: 217px;
+    border-radius: 5px;
+}
+
+.editors-choice-books {
+    display: flex;
+    flex-direction: column;
+    width: 155px;
+}
+
+.editors-choice-books a {
+    color: #f59f00;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.editors-choice-books a:hover {
+    color: #fab005;
+    text-decoration: underline;
+}
+
+/*------------------*/
+/*--SUBSCRIPTIONS--*/
+/*----------------*/
+
+.subscriptions {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 80px 450px;
+    margin-bottom: 26px;
+    justify-content: center;
+
+}
+
+.check {
+    stroke: #f59f00;
+}
+
+.subscriptions h4 {
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.subscriptions h5 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.subscriptions li {
+    list-style-type: none;
+}
+
+.subscription-headline {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+.subscription-headline h1 {
+    font-size: 32px;
+}
+
+.subscription-headline {
+    font-size: 20px;
+}
+
+.basic-subscribe {
+    border: 1px solid #f59f00;
+    width: 280px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.per-month {
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+}
+
+.basic-list li {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    line-height: 2.3;
+    gap: 5px;
+}
+
+.basic-subscribe button {
+    background-color: #f59f00;
+    color: white;
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+    font-size: 26px;
+    border: 1px solid #f59f00;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 33px;
+    margin-left: 40px;
+}
+
+.basic-subscribe button:hover {
+    background-color: #fab005;
+    cursor: pointer;
+}
+
+.standard-subscribe {
+    border: 2px solid #f59f00;
+    background-color: #f59f00;
+    width: 280px;
+    height: 400px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.standard-subscribe button {
+    background-color: white;
+    color: #f59f00;
+    text-transform: uppercase;
+    width: 210px;
+    height: 50px;
+    font-size: 26px;
+    border: 1px solid #f59f00;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-left: 32px;
+    margin-top: 10px;
+}
+
+.standard-subscribe button:hover {
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+
+.standard-list li {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    line-height: 2.1;
+    gap: 5px;
+}
+
+
+.premium-subscribe {
+    border: 2px solid #f59f00;
+    width: 280px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.premium-subscribe button {
+    background-color: #f59f00;
+    color: white;
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+    font-size: 26px;
+    border: 1px solid #f59f00;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.premium-subscribe button:hover {
+    background-color: #fab005;
+    cursor: pointer;
+}
+
+.premium-list li {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    line-height: 2.1;
+    gap: 5px;
+}
+
+/*------------------*/
+/*ABOUT AND REVIEWS*/
+/*----------------*/
+
+.reviews {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 96px;
+}
+
+.delivery-review {
+    display: grid;
+    grid-template-columns: 60px 230px;
+    border: 1px solid #fab005;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #fab005;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.delivery-review p:first-child {
+    font-size: 20px;
+}
+
+.books-review {
+    display: grid;
+    grid-template-columns: 50px 180px;
+    border: 1px solid #fab005;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    padding: 20px 50px;
+    background-color: #fab005;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.books-review p:first-child {
+    font-size: 20px;
+}
+
+.stars-review {
+    display: grid;
+    grid-template-columns: 60px 215px;
+    border: 1px solid #fab005;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    padding: 20px 32px;
+    background-color: #fab005;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.stars-review p:first-child {
+    font-size: 20px;
+}
+
+/*---------------*/
+/*--CONTACT US--*/
+/*-------------*/
+
+.contact-us {
+    display: grid;
+    grid-template-columns: 250px 650px;
+    grid-template-rows: 60px 40px 90px 90px;
+    column-gap: 20px;
+    row-gap: 15px;
+    margin-bottom: 96px;
+    justify-content: center;
+}
+
+.contact-us h1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-size: 32px;
+}
+
+.name-contact {
+    width: 250px;
+    height: 30px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    outline: none;
+    border: 1px solid #f59f00;
+    border-radius: 5px;
+    padding-left: 5px;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.name-contact::placeholder {
+    font-family: "inter", sans-serif;
+}
+
+.email-contact {
+    width: 250px;
+    height: 30px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    outline: none;
+    border: 1px solid #f59f00;
+    border-radius: 5px;
+    padding-left: 5px;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.email-contact::placeholder {
+    font-family: "inter", sans-serif;
+}
+
+.message-contact {
+    width: 650px;
+    height: 90px;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    outline: none;
+    border: 1px solid #f59f00;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-bottom: 60px;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.message-contact::placeholder {
+    font-family: "inter", sans-serif;
+}
+
+#send-button {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    width: 150px;
+    height: 50px;
+    background-color: #f59f00;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 100px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #fab005;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 48px;
+}

@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #2c2d34;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.header-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px 260px 90px;
+}
+
+.header-info img {
+    align-self: center;
+
+}
+
+.login-signup {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+
+#login {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#login:hover {
+    color: #e94822;
+}
+
+#sign-up {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid black;
+    width: 120px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+#sign-up:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+
+.order-food {
+    grid-column: 1/3;
+    padding-bottom: 30px;
+}
+
+.order-food h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.order-food p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #7e808c;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.order-food input {
+    width: 350px;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    border: 1px solid #e94822;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.order-food button {
+    background-color: #e94822;
+    color: white;
+    height: 50px;
+    width: 120px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.order-food button:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.popular-cities {
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.popular-cities h4 {
+    color: #7e808c;
+    font-weight: normal;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.popular-cities a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.food-pic {
+    vertical-align: middle;
+}
+
+
+/*-------------------*/
+/*FOOD ORDER DETAILS*/
+/*-----------------*/
+
+
+.details-order {
+    background-color: #2b1e16;
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    justify-content: center;
+    gap: 200px;
+    padding-bottom: 50px;
+}
+
+.details-order h2 {
+    color: white;
+    margin-top: 30px;
+}
+
+.details-order p {
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.minimum-order,
+.order-track,
+.fast-delivery {
+    text-align: center;
+}
+
+.fast-delivery {
+    margin-top: 50px;
+}
+
+/*------------------*/
+/*MOBILE APLICATION*/
+/*----------------*/
+
+.mob-aplications {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+.aplication-choose {
+    margin-right: 150px;
+}
+
+.aplication-choose p {
+    width: 320px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #7e808c;
+}
+
+.aplication-choose h2 {
+    font-size: 36px;
+    width: 300px;
+}
+
+.iphone-top {
+    display: flex;
+    margin-top: -55px;
+}
+
+.iphone-bottom {
+    vertical-align: middle;
+    margin-bottom: -55px;
+}
+
+/*--------------*/
+/*--FOOD MENU--*/
+/*------------*/
+
+
+.food-menu {
+    background-image: url("https://wallpapercave.com/wp/wp4788536.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 60px 200px 200px 200px 200px 200px 200px 200px;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.food-menu h1 {
+    grid-column: 1/4;
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    font-weight: normal;
+}
+
+.food-container {
+    position: relative;
+    padding: 0;
+    width: 300px;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+#food-id {
+    color: white;
+}
+
+.food-text-container {
+    opacity: 0;
+    font-size: 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black;
+    font-weight: bold;
+    background-color: rgba(10, 10, 10, 0.8);
+    width: 300px;
+    height: 200px;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+
+}
+
+.food-container .food-text-container:hover {
+    opacity: 1;
+}
+
+.food-container .food-text-container #food-id {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+}
+
+.food-container .food-text-container:hover #food-id {
+    opacity: 1;
+    transform: translateY(70px);
+    -webkit-transform: translateY(70px);
+}

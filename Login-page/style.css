@@ -1,0 +1,116 @@
+/*https://www.everwallpaper.co.uk/cdn/shop/products/peak-wallpaper-mural_608e3374-c8cf-4e39-8beb-8429e0c5a7e3.jpg?v=1659074806*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://images5.alphacoders.com/132/1328245.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+
+}
+
+article {
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 400px;
+    height: 360px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: repeat(5, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    margin-top: 200px;
+    backdrop-filter: blur(4px);
+}
+
+#login {
+    text-align: center;
+    color: white;
+    text-align: center;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.username {
+    grid-column: 1/5;
+    grid-row: 2/3;
+}
+
+.section1 {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 320px;
+    outline: none;
+    padding: 5px 5px;
+    margin-left: 30px;
+}
+
+.section1::placeholder {
+    color: white;
+    font-size: 12px;
+}
+
+.password {
+    grid-column: 1/5;
+    grid-row: 3/4;
+}
+
+.section2 {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 320px;
+    outline: none;
+    padding: 5px 5px;
+    margin-left: 30px;
+}
+
+.section2::placeholder {
+    color: white;
+    font-size: 12px;
+}
+
+.section3,
+p {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    grid-column: 1/5;
+    grid-row: 4/5;
+    align-self: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    background-color: #4169E1;
+    width: 150px;
+    height: 35px;
+    font-family: sans-serif;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 120px;
+    align-self: start;
+    grid-column: 1/5;
+    grid-row: 5/6;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 2px 6px 2px #9932CC;
+}
